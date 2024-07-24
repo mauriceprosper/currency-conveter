@@ -14,7 +14,7 @@ class _CurrencyConverterCupertinoPageState
   final TextEditingController textEditingController = TextEditingController();
 
   void convert() {
-    result = double.parse(textEditingController.text) * 80;
+    result = double.parse(textEditingController.text) * 1607.01;
     setState(() {});
   }
 
@@ -33,7 +33,7 @@ class _CurrencyConverterCupertinoPageState
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'INR ${result != 0 ? result.toStringAsFixed(3) : result.toStringAsFixed(0)}',
+                '₦ ${result != 0 ? result.toStringAsFixed(3) : result.toStringAsFixed(0)}',
                 style: const TextStyle(
                   fontSize: 55,
                   fontWeight: FontWeight.bold,
